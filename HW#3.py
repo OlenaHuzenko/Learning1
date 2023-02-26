@@ -14,21 +14,26 @@
 # який свормує новий list (наприклад lst2), який містить лише змінні типу стрінг, які присутні в lst1. Зауважте, що
 # lst1 не є статичним і може формуватися динамічно від запуску до запуску.
 
-lst1=input('Введіть ліст')
-i=0
-for i in lst1:
-    if lst1.isalpha():
+#lst1=list(input('Введіть ліст'))
+#i=0
+#lst2=[]
+#for i in lst1:
+    #if lst1.isinstance(i,str):
+        #lst2 += i
+       # print(lst2)
+    #else: next(i)
 
 #3 Є стрінг з певним текстом (можна скористатися input або константою). Напишіть код, який визначить кількість слів
 # в цьому тексті, які закінчуються на "о" (враховуються як великі так і маленькі).
 
-#my_str=input()
-#h=my_str.split('O')
-#g= set[' ']
-#chars = set(removed_chars)
-
-
-#print(len(h))
-#print(h)
+my_str=input()
+my_str2=str.title(my_str)
+h=0
+for i in my_str2:
+   if 'O ' in my_str2:
+        h+=1
+    else:
+        h+=0
+print(h)
 
 
